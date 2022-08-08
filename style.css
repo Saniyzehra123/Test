@@ -77,3 +77,110 @@ button {
 
 
 
+
+@media only screen and (min-width: 0px) and (max-width:320px)
+        {
+           
+            #workbox{
+                
+                width: 100%;
+                grid-template-rows:70px 100px 100px 100px 100px;
+                grid-template-areas:
+               "B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1"
+               "B3 B3 B3 B3 B3 B3 B3 B3 B3 B3 B3 B3"
+               "B4 B4 B4 B4 B4 B4 B4 B4 B4 B4 B4 B4"
+               "B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2"
+            }
+        }
+
+        @media only screen and (min-width: 321px) and (max-width:720px)
+        {
+            #workbox{
+                width: 100%;
+                grid-template-rows: 150px 150px 200px ;
+                grid-template-areas:
+              
+               "B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1 B1"
+               "B3 B3 B3 B3 B3 B3 B4 B4 B4 B4 B4 B4"
+               "B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2 B2";
+               
+               font-size: larger;
+            }
+        }
+
+.rates{
+    text-align: center;
+    margin: auto;
+}
+.imgsize{
+    width: 298px;
+    height: 298px;
+}
+
+.apartment>div{
+    display: flex;
+    margin-left:10px;
+    margin-top: 10px;
+ gap: 8%;
+}
+
+
+
+
+#postsection{
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+    grid-template-rows: repeat(1,100px);
+    height:1200px;
+    border:1px solid red;
+    grid-gap: 10px,
+    
+}
+#postleft{
+grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(3,100px);
+    display: grid;
+    grid-gap:10px;   
+   padding-top:5px;
+
+   border:1px solid red;
+}
+.item3 {grid-area: img;}
+.item4   {grid-area: visi;}
+.item5    {grid-area: tap;}
+
+#postLeft1{
+display: grid;
+grid-template-areas: "img visi tap";
+}
+#tagsection{
+/* border:1px solid blue; */
+/* display: flex; */
+width: 100%;
+justify-content: center;
+}
+#tag1{
+display:flex;
+justify-content: center;
+/* justify-content: space-between; */
+}
+#tag1>h3{
+margin-left: 10px;
+}
+ .visit{
+background-color: gray;
+/* border:1px solid blue; */
+border-radius: 5px;
+text-align: center;
+padding-top: 10px;
+height: 40px;
+width: 10%;
+}
+
+.item1 {grid-area: left;}
+.item2 {grid-area: right;}
+#postsection{
+display: grid;
+grid-template-areas: "left left right";
+
+}
